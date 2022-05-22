@@ -1,22 +1,24 @@
 @charset "UTF-8";
 /*estilos del html Cejas*/
-.cejasPrincipal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 15px;
-  font-size: 20px; }
-  .cejasPrincipal .lista {
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Amatic SC', cursive;
-    font-family: 'Moon Dance', cursive;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Roboto', sans-serif;
-    text-align: center; }
-    .cejasPrincipal .lista li {
-      padding: 15px; }
+.cejas {
+  text-align: center; }
+  .cejas .cejasPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    font-size: 20px; }
+    .cejas .cejasPrincipal .lista {
+      text-decoration: none;
+      list-style: none;
+      font-family: 'Amatic SC', cursive;
+      font-family: 'Moon Dance', cursive;
+      font-family: 'Playfair Display', serif;
+      font-family: 'Roboto', sans-serif;
+      text-align: center; }
+      .cejas .cejasPrincipal .lista li {
+        padding: 15px; }
 
 @media screen and (max-width: 700px) {
   .contenedor {
@@ -30,12 +32,13 @@
   body div header h1 {
     grid-area: titulo;
     font-size: 55px; }
+  .cejas {
+    grid-area: principal1; }
   .cejasPrincipal {
-    grid-area: principal1;
     display: flex;
     flex-direction: column-reverse;
     gap: 40px; }
-  footer {
+  .cej footer {
     text-align: center;
     font-size: 10px;
     margin-top: 80px;
@@ -79,8 +82,10 @@ body div main .imgCosme {
   width: 550px;
   height: 350px;
   padding: 15px; }
-  body div main .imgCosme p span {
-    display: block; }
+  body div main .imgCosme p {
+    margin: 20px; }
+    body div main .imgCosme p span {
+      display: block; }
 
 @media screen and (max-width: 700px) {
   .contenedor {
